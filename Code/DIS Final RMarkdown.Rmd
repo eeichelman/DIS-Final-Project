@@ -29,7 +29,7 @@ library(MASS)
 
 ``` {r, echo=FALSE, include=FALSE, warning=FALSE}
 ##cleaning 2018 data
-df <- read_excel("/Users/EmmaEichelman/Downloads/NSEE_Spring_2018_PUD.xlsm")
+df <- read_excel("../Code/NSEE_Spring_2018_PUD.xlsm")
 
 view(df)
 
@@ -72,7 +72,7 @@ view(df_final)
 ``` {r, echo=FALSE, include=FALSE, warning=FALSE}
 ##cleaning 2010 data
 
-df.beg <- read_excel ("/Users/EmmaEichelman/Downloads/S2010-NSEE_pud_v2.xlsm")
+df.beg <- read_excel ("../Code/S2010-NSEE_pud_v2.xlsm")
 view(df.beg)
 
 df.beg <- na_if(df.beg, 99)
@@ -107,7 +107,7 @@ view(df.beg_final)
 
 ``` {r, echo=FALSE, include=FALSE, warning=FALSE}
 ##cleaning 2014 data
-df.mid <- read_excel("/Users/EmmaEichelman/Downloads/s14-pud_v2.xlsm")
+df.mid <- read_excel("../Code/s14-pud_v2.xlsm")
 view(df.mid)
 
 df.mid <- na_if(df.mid, 99)
